@@ -3,157 +3,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  padding-top: 160px;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 p {
-    color: rgb(85, 85, 85); 
+  color: rgb(85, 85, 85); 
 }
 
 /* TRANSITION */
 
 a, 
 .btn {
-    transition: all 300ms ease; 
+  transition: all 300ms ease; 
 }
 
 /* DESKTOP NAV */
 
 nav, 
 .nav-links {
-    display: flex;
+  display: flex;
 }
 
 nav {
-    justify-content: space-around; 
-    align-items: center;
-    height: 17vh;
+  justify-content: space-around; 
+  align-items: center;
+  height: 17vh;
 }
 
 .nav-links {
-    gap: 2rem;
-    list-style: none; 
-    font-size: 1.5rem;
+  gap: 2rem;
+  list-style: none; 
+  font-size: 1.5rem;
 }
 
 a{
-    color: black;
-    text-decoration: none; 
-    text-decoration-color: white;
+  color: black;
+  text-decoration: none; 
+  text-decoration-color: white;
 }
 
 a:hover {
-    color: grey; 
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+  color: grey; 
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .logo:hover{
-    cursor: default;
+  cursor: default;
 }
 
 /* HAMBURGER MENU*/
 
 #hamburger-nav {
-    display: none;
+  display: none;
 }
 
 .hamburger-menu {
-    position: relative; 
-    display: inline-block;
+  position: relative; 
+  display: inline-block;
 }
 
 .hamburger-icon {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between;
-    height: 24px; 
-    width: 30px; 
-    cursor: pointer;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+  height: 24px; 
+  width: 30px; 
+  cursor: pointer;
 }
 
 .hamburger-icon span{
-    width: 100%; 
-    height: 2px;
-    background-color: black;
-    transition: all 0.3 ease-in-out;
+  width: 100%; 
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links {
-    position: absolute;
-    top: 100%; 
-    right: 0%; 
-    background-color: white;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
+  position: absolute;
+  top: 100%; 
+  right: 0%; 
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a{
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links li {
-    list-style: none;
+  list-style: none;
 }
 
 .menu-links.open {
-    max-height: 300px;
+  max-height: 300px;
 }
 
 .hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
+  transform: rotate(45deg) translate(10px, 5px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
+  transform: rotate(-45deg) translate(10px, -5px);
 }
 
 .hamburger-icon span:first-child {
-    transform: none;
+  transform: none;
 }
 
 .hamburger-icon span:first-child {
-    opacity: 1;
+  opacity: 1;
 }
 
 .hamburger-icon span:first-child {
-    transform: none;
+  transform: none;
 }
 
 /* SECTIONS */
 
 section {
-    padding-top: 4vh; 
-    height: 96vh; 
-    margin: 0 10rem; 
-    box-sizing: border-box;
-    min-height: fit-content;
+  padding-top: 4vh; 
+  height: 96vh; 
+  margin: 0 10rem; 
+  box-sizing: border-box;
+  min-height: fit-content;
 }
 
 .section-container {
@@ -163,32 +164,38 @@ section {
 /* PROFILE SECTION */
 
 #profile {
-    display: flex; 
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  height: 80vh;
+  text-align: center;
 }
 
 .section__pic-container {
-    display: flex;
-    height: 400px; 
-    width: 400px; 
-    margin: auto 0;
-    border-radius: 50%;
-    overflow: hidden; 
-    display: inline-block;
+  display: flex;
+  height: 400px; 
+  width: 400px; 
+  margin: auto 0;
+  border-radius: 50%;
+  overflow: hidden; 
+  justify-content: center;
 }
 
 .section__pic-container img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-    object-position: center top;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  object-position: center top;
 }
 
 .section__text {
-    align-self: center;
-    text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center; 
 }
 
 .section__text p {
@@ -428,4 +435,40 @@ section {
   
   footer p {
     text-align: center;
+  }
+
+  /* FIXED HEADER */
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white; 
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    height: 100px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0rem 10rem;
+  }
+
+  header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  header .nav-links li a {
+    color: black; 
+    text-decoration: none;
+    padding: 0rem 1rem;
+  }
+
+  header .nav-links li a:hover {
+    text-decoration: underline;
   }
